@@ -346,4 +346,3 @@ $response = Invoke-RestMethod -Uri $url -Headers $headers -Body $body -Method Po
 
 $response.choices.message.content | Clip
 Write-Host "AI summary copied to clipboard!" -ForegroundColor Green
-Write-Host "Analysis complete. Check fpl.json for detailed data." -ForegroundColor Green
