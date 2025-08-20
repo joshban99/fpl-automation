@@ -58,10 +58,7 @@ The script will automatically obtain an access token for Azure Cognitive Service
 
 ## Output
 
-The script generates two outputs:
-
-1. **fpl.json** - Detailed JSON file with all team data, transfers, and analysis
-2. **AI Summary** - Copied to clipboard, includes:
+**AI Summary** - Copied to clipboard, includes:
    - Top performers of the gameweek
    - Biggest rank changes
    - Popular captain choices and their performance
