@@ -308,7 +308,7 @@ $finalOutput = [PSCustomObject]@{
 }
 
 # Output as JSON for ChatGPT analysis
-$finalOutput | ConvertTo-Json -Depth 6 | Out-File fpl.json
+$finalOutput | ConvertTo-Json -Depth 6
 Write-Host "Data exported to fpl.json" -ForegroundColor Green
 
 # Get Azure access token and call OpenAI
