@@ -18,54 +18,19 @@ This PowerShell script analyzes Fantasy Premier League (FPL) gameweek data for a
 - Valid Azure subscription with OpenAI service deployed
 - Internet connection to access FPL API
 
-## Configuration
-
-The script uses a configuration file to keep sensitive information secure and separate from the main script.
-
-### 1. Initial Setup
-1. Copy the configuration template:
-   ```powershell
-   Copy-Item config.template.ps1 config.ps1
-   ```
-2. Edit `config.ps1` with your specific values (see sections below)
-
-**Note**: The `config.ps1` file is excluded from git via `.gitignore` to protect your sensitive information.
-
-### 2. League Configuration
-In your `config.ps1` file, update:
-```powershell
-$leagueId = 5927   # Replace with your FPL league ID
-$gameweek = 15     # Change to current Gameweek number
-```
-
-### 3. Azure OpenAI Configuration
-In your `config.ps1` file, update:
-```powershell
-$azureOpenAIEndpoint = "https://your-openai-service.cognitiveservices.azure.com"
-$deploymentName = "your-gpt-deployment-name"
-$apiVersion = "2025-01-01-preview"
-```
-
 ## Quick Start
 
-1. **Setup configuration**:
-   ```powershell
-   Copy-Item config.template.ps1 config.ps1
-   ```
-
-2. **Edit config.ps1** with your League ID and Azure OpenAI details
-
-3. **Login to Azure**:
+1. **Login to Azure**:
    ```powershell
    Connect-AzAccount
    ```
 
-4. **Run the script**:
+2. **Run the script**:
    ```powershell
    .\fpl.ps1
    ```
 
-5. **Get your summary** - it will be copied to your clipboard automatically!
+3. **Get your summary** - it will be copied to your clipboard automatically!
 
 ## How to Find Your League ID
 
